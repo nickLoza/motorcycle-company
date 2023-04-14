@@ -9,7 +9,7 @@ function Hero({ videoUrl }: IHero) {
 			<video 
 				className="hero__video"
 				src={videoUrl} 
-				poster="https://i.postimg.cc/pXBxVYzt/hd-1.webp" 
+				poster="https://i.postimg.cc/G3XtHD3R/hero-prev.webp" 
 				width={1920}
 				height={800}
 				muted 
