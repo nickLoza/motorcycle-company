@@ -1,0 +1,16 @@
+@use "components/vars/vars" as *;
+@use "components/reset";
+@use "components/layout/home";
+@use "components/layout/technology";
+@use "components/layout/connect";
+@use "components/layout/header";
+@use "components/layout/footer";
+@use "components/layout/imgTextSection.scss";
+@use "components/layout/highlightSection.scss";
+@use "components/layout/hero";
+
+
+body{
+	background: #000;
+	font-family: 'Chivo Mono', monospace;
+}

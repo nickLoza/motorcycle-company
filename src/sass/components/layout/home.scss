@@ -1,0 +1,87 @@
+@use "../vars/vars" as *;
+
+
+.banner-tech{
+	position: relative;
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+	&__video{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	&__title{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2.7rem;
+		letter-spacing: 1rem;
+	}
+	&__link{
+		margin-top: 4rem;
+		font-size: 2.5rem;
+		padding: .5rem 1.2rem;
+		outline: 2px solid $secondary-color;
+		transition: background-color .2s ease-in;
+		&:hover{
+			background-color: $secondary-color;
+		}
+	}
+}
+
+
+.banner-eco{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 300px;
+		align-items: center;
+		padding: 1.5rem,
+	}
+	&__title{
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		letter-spacing: .5rem;
+	}
+	&__link{
+		display: inline-block;
+		font-size: 1.5rem;
+		padding: .4rem .9rem;
+		outline: 2px solid $secondary-color;
+		transition: background-color .2s ease-in;
+		margin-top: 1.2rem;
+		&:hover{
+			background-color: $secondary-color;
+		}
+	}
+	&__img{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		max-height: 300px;
+		object-fit: cover;
+		z-index: -1;
+	}
+	@media screen and (min-width: 868px) {
+		&__title{
+			font-size: 3rem;
+		}
+		&__link{
+			font-size: 2rem;
+		}
+		
+	}
+}

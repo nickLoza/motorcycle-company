@@ -1,0 +1,44 @@
+@use "../vars/vars" as *;
+
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 300px;
+	width: 100%;
+	border-top: 1px solid $secondary-color;
+	&__content{
+		width: 100%;
+		max-width: 1200px;
+		padding: 1rem 3rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		align-items: center;
+		justify-content: space-between;
+		.socials{
+			display: flex;
+			&__link{
+				font-size: 2rem;
+			}
+		}
+		.links{
+			display: flex;
+			column-gap: 1.5rem;
+			font-size: 1.2rem;
+		}
+	}
+	&__copyright{
+		margin-top: 4.5rem;
+	}
+}
+
+
+.hover-link{
+	transition: color .2s ease-in;
+	&:hover{
+		color: $secondary-color;
+	}
+}

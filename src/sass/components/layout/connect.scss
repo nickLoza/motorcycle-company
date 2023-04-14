@@ -1,0 +1,56 @@
+@use "../vars/vars" as *;
+
+
+
+.connect{
+	margin-top: 6.25rem;
+	min-height: 100vh;
+	&__title{
+		text-align: center;
+		font-size: 3.1rem;
+		text-transform: uppercase;
+	}
+	&__form{
+		max-width: 700px;
+		min-width: 300px;
+		height: 400px;
+		margin: auto;
+		border: 1px solid $secondary-color;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		padding-top: 2rem;
+		margin-top: 3rem;
+		.input-field{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			column-gap: 1rem;
+			width: 80%;
+			&__label{
+				font-size: 1.3rem;
+			}
+			&__input{
+				width: 100%;
+				outline: none;
+				border-bottom: 2px solid $secondary-color;
+				padding-top: .5rem;
+				font-size: 1.1rem;
+				&:focus{
+				}
+			}
+		}
+		&-submit{
+			font-size: 1.8rem;
+			padding: .3rem .9rem;
+			outline: 2px solid $secondary-color;
+			margin-top: 2rem;
+			transition: background-color .2s ease-in;
+			cursor: pointer;
+			&:hover{
+				background-color: $secondary-color;
+			}
+		}
+	}
+}
