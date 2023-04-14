@@ -6,7 +6,9 @@ function Layout() {
 	return (
 		<>
 			<Header/>
-			<Routers/>
+			<div className="main">
+				<Routers/>
+			</div>
 			<Footer/>
 		</>
 	)
