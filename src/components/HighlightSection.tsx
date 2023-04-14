@@ -10,7 +10,7 @@ function HighlightSection({ videoUrl, quote }: IHighlight) {
 			<video 
 				className="section-highlight-video"
 				src={videoUrl}
-				poster="https://i.postimg.cc/pXBxVYzt/hd-1.webp"
+				poster="https://i.postimg.cc/G3XtHD3R/hero-prev.webp"
 				width={1200}
 				height={600}
 				muted 
