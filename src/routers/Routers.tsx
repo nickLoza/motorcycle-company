@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react"
 import { Routes, Route, Navigate } from "react-router-dom";
+import { PuffLoader } from "react-spinners";
 
 const Home = lazy(()=> import("../pages/Home"));
 const Ecology = lazy(()=> import("../pages/Ecology"));
@@ -8,7 +9,12 @@ const Connect = lazy(()=> import("../pages/Connect"));
 
 function Routers() {
 	return (
-		<Suspense fallback="Loading...">
+		<Suspense fallback={
+			<PuffLoader
+			  className="spinner"
+			  color="#a6a6a6"
+			  size={100}/>
+		}>
 			<Routes>
 				<Route path="" element={<Navigate to="home"/>}/>
 				<Route path="home" element={<Home/>}/>
