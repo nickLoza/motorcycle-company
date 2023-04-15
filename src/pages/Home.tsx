@@ -15,7 +15,7 @@ function Home() {
 	return (
 		<Helmet title="home">
 			<>
-			<Hero videoUrl={home.heroUrl}/>
+			<Hero videoUrl={home.heroUrl} posterUrl={home.posterUrl}/>
 			{home.section_1?.map((sec,i)=>(
 				<ImgTextSection 
 					key={i} 

@@ -13,7 +13,7 @@ function Ecology() {
 	return (
 		<Helmet title="ecology">
 		<>
-			<Hero videoUrl={ecology.heroUrl}/>
+			<Hero videoUrl={ecology.heroUrl} posterUrl={ecology.posterUrl}/>
 			{ecology.section_1?.map((sec,i)=>(
 				<ImgTextSection 
 					key={i} 

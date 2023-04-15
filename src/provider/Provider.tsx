@@ -16,6 +16,7 @@ import ecologyUrl from "../assets/videos/hd/ecology-video.mp4";
 const state = {
 		home: {
 			heroUrl: homeHeroUrl,
+			posterUrl: "https://i.postimg.cc/G2Lh0KFT/home-hero-0.webp",
 			section_1: [
 				{	
 					url: "https://i.postimg.cc/LszKWJ3V/1.webp", 
@@ -52,6 +53,7 @@ const state = {
 		},
 		technology: {
 			heroUrl: techUrl,
+			posterUrl: "https://i.postimg.cc/wjxpjMtn/technology-video-0.webp",
 			section_1: [
 				{	
 					url: "https://i.postimg.cc/xTCQdT90/4.webp", 
@@ -83,6 +85,7 @@ const state = {
 		},
 		ecology: {
 			heroUrl: ecologyUrl,
+			posterUrl: "https://i.postimg.cc/D0qT8bP3/ecology-video-0.webp",
 			section_1: [
 				{	
 					url: "https://i.postimg.cc/xTCQdT90/4.webp", 

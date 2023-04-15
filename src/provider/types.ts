@@ -12,6 +12,7 @@ interface ISectionObject{
 export interface IState{
 	home: {
 		heroUrl: string,
+		posterUrl: string,
 			section_1: Array<ISectionObject>,
 			hightlight:{
 				quote: string,
@@ -32,6 +33,7 @@ export interface IState{
 		},
 	technology: {
 			heroUrl: string,
+			posterUrl: string,
 			section_1: Array<ISectionObject>,
 			hightlight:{
 				quote: string,
@@ -45,6 +47,7 @@ export interface IState{
 		},
 	ecology: {
 			heroUrl: string,
+			posterUrl: string,
 			section_1: Array<ISectionObject>,
 			hightlight:{
 				quote: string,

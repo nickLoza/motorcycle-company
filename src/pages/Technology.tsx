@@ -23,7 +23,7 @@ function Technology() {
 	return (
 		<Helmet title="technology">
 			<>
-			<Hero videoUrl={technology.heroUrl}/>
+			<Hero videoUrl={technology.heroUrl} posterUrl={technology.posterUrl}/>
 			{technology.section_1?.map((sec,i)=>(
 				<ImgTextSection 
 					key={i} 
