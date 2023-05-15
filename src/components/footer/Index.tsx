@@ -1,4 +1,4 @@
-import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -41,11 +41,23 @@ function Footer() {
 						<AiOutlineLinkedin/>
 					</Link>
 				</div>
-			</div>
-			<p className="footer__copyright">
-				©Motorcycle Inc 2023 All Rights Reserved.
-			</p>
-		</footer>
+				<div className="footer__content-info info">	
+					<a  className="info__link"
+					href="https://github.com/nickLoza/motorcycle-company"
+					target="_blank">
+					<AiOutlineGithub/>Repository 
+					</a>
+					<a  className="info__link"
+					href="https://www.linkedin.com/in/nicklozadev/"
+					target="_blank">
+					<AiOutlineLinkedin/>Linkedin 
+					</a>
+					</div>
+					</div>
+					<p className="footer__copyright">
+					©Motorcycle Inc 2023 All Rights Reserved.
+					</p>
+				</footer>
 	)
 }
 
